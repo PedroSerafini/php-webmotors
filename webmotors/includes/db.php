@@ -1,5 +1,5 @@
 <?php
-$servidor = mysqli_connect('localhost', 'root', 'Phs123456789@');
+$servidor = mysqli_connect('localhost', 'root', '');
 $db = mysqli_select_db($servidor, 'webmotors');
 
 if (!$servidor || !$db) {
