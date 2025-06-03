@@ -1,5 +1,4 @@
 <?php
-session_start();
 include('includes/db.php');
 include('includes/auth.php');
 include('includes/header.php');
@@ -15,7 +14,9 @@ $result = mysqli_query($servidor, $sql);
 <div class="container">
     <div class="navbar">
         <a href="index.php">Início</a>
-        <a href="dashboard.php" style="font-weight: bold; color: #007bff;">Painel</a>
+        <?php if (isset($_SESSION['tipo']) && $_SESSION['tipo'] === 'user'): ?>
+            <a href="dashboard.php" style="font-weight: bold; color: #007bff;">Painel</a>
+        <?php endif; ?>
         <?php if (isset($_SESSION['tipo']) && $_SESSION['tipo'] === 'admin'): ?>
             <a href="admin/approve.php" style="font-weight: bold; color: #dc3545;">Painel Admin</a>
         <?php endif; ?>

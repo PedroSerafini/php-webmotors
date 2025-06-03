@@ -34,7 +34,7 @@ $result = mysqli_query($servidor, $sql);
 <div class="container">
     <div class="navbar">
         <a href="../index.php">Início</a>
-        <a href="../dashboard.php">Painel</a>
+        <a href="#" style="font-weight: bold; color: #dc3545;">Painel Admin</a>
         <a href="../logout.php">Sair</a>
     </div>
 
