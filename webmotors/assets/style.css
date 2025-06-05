@@ -31,12 +31,9 @@ a:hover {
 
 /* Formulários */
 form {
-    background-color: #fff;
-    padding: 20px;
     border-radius: 8px;
     width: 100%;
     max-width: 500px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-bottom: 30px;
 }
 input, textarea, button {
@@ -529,3 +526,24 @@ button[type="submit"]:hover {
     border: 1px solid #badbcc;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.anuncio {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.filter {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}

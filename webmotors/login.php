@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['nome'] = $row['nome'];
             $_SESSION['tipo'] = $row['tipo'];
             echo $_SESSION['tipo'];
-            header("Location: dashboard.php");
+            header("Location: index.php");
         } else {
             echo "Senha incorreta.";
         }
